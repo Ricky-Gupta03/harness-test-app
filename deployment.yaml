@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: harness-container
-        image: <+artifacts.sidecars.harness_app_image.image>
+        image: <+artifact.image>
         ports:
         - containerPort: 80
 ---
